@@ -1,0 +1,78 @@
+.h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 68px;
+  line-height: 80px;
+}
+
+body>main>header {
+  margin-bottom: 112px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.logo {
+  float: left;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/LogoBestSite.svg);
+  width: 149px;
+  height: 32px;
+}
+
+
+
+header>ul {
+  float: right;
+  /* Сослалась на UL внутри header, не объявляя класс, не давая ID. Если header_ul то хедер родитель с любым уровнем вложенности ul, если >, то объявляем ul дочерним элементом */
+  list-style: none;
+}
+
+header>ul>li {
+  display: inline-block;
+}
+
+
+
+body {
+  background-color: #fff;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/Mohaka.png);
+  backthrepeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main {
+  background-color: #fff;
+  width: 984px;
+  border-bottom-right-radius: 50px;
+  padding: 20px
+}
+
+ul.tab {
+  margin: 0;
+  /* Обнуляем значение отступов */
+  padding: 4px;
+  /* Значение полей */
+}
+
+ul.tab li {
+  display: inline;
+  /* Отображать как строчный элемент */
+  margin-right: 10px;
+  /* Отступ слева */
+  padding: 3px;
+  /* Поля вокруг текста */
+}
+
+.lower {
+  background-color: #000000;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

@@ -1,0 +1,231 @@
+header {
+  margin: 16px 22px 0px 22px;
+  /* для всего Header отступы*/
+}
+
+header div {
+  /* заголовок бирюзовым*/
+  text-transform: uppercase;
+  color: #44ab96;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  float: left;
+  margin: 12px;
+  /* для BEST SITE расстояние от лого*/
+}
+
+#logo {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/LogoBestSite.svg);
+  width: 32px;
+  height: 32px;
+  left: 32px;
+  top: 32px;
+  float: left;
+  margin: 0px 0px 0px 0px;
+  /* лого на одном уровне с BS, не поняла почему*/
+}
+
+a {
+  text-decoration: none;
+}
+
+/*  отменяет подчеркивание */
+
+header a {
+  /* ссылки в хедере красным*/
+  text-transform: uppercase;
+  color: #d55151;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-si.clearfixx;
+  line-height: 19px;
+}
+
+header ul {
+  float: right;
+}
+
+header ul li {
+  display: inline-block;
+  /* блоки между  собой стали в строку*/
+}
+
+section ul {
+  float: left;
+}
+
+section ul li div {
+  display: inline-block;
+  /* текст и картинки между  собой стали в строку*/
+}
+
+.clearfix {
+  clear: both;
+  /* искуственно создали пустые теги для хедера и section, чтоб сделать отступы, так как из-за флоат все развалилось*/
+}
+
+section h1 {
+  /* жирный заголовок в article*/
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 68px;
+  line-height: 80px;
+  margin: 115px 313px 32px 22px;
+}
+
+body {
+  /*  селектор для определения фона страницы */
+  background-color: #fff;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/Mohaka.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background: center / cover url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/Mohaka.png) no-repeat fixed #fff;
+  /* то же самое, что выше, другой способ*/
+}
+
+main {
+  /*   скругление*/
+  background-color: #fff;
+  width: 984px;
+  border-bottom-right-radius: 50px;
+  padding: 20px;
+  /* учитывать его при всех margin!!!!  */
+  /*   border-bottom-left-radius: 50px; */
+  /*   border-top-right-radius: 50px; */
+  /*   border-top-left-radius: 50px; */
+  /*   border-radius: 50px; */
+}
+
+section p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0px 325px 47px 22px;
+  /* для Lorem ipsum отступы*/
+}
+
+section.list li {
+  display: inline-block;
+  /* расположить пункты горизонтально */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#pic1 {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/item1.svg);
+}
+
+#pic2 {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/item2.svg);
+}
+
+#pic3 {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/item3.svg);
+}
+
+div.pictures {
+  width: 112px;
+  height: 83.78px;
+  left: 42px;
+  top: 438px;
+}
+
+#pic4 {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/icon-info.svg);
+  width: 25px;
+  height: 25px;
+  left: 25px;
+  top: 25px;
+}
+
+button {
+  /* красота кнопки из фигмы */
+  width: 342px;
+  height: 64px;
+  left: 34px;
+  top: 765px;
+  background: #44ab96;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  margin: 243px 0px 28px 22px;
+}
+
+footer.topfoo button {
+  color: #ffffff;
+  /* белый цвет текста для кнопки */
+  text-transform: uppercase;
+  /* верхний регистр */
+}
+
+footer.topfoo div {
+  margin: 0px 0px 0px 22px;
+}
+
+footer.topfoo a {
+  /* ima: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/icon-info.svg); */
+  color: #eb5757;
+  /* красный цвет текста для ссылки Почитать */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0px 0px 89px 22px;
+}
+
+footer.bottom {
+  /* футер. который идет после main: main + footer */
+  background-color: #1c1c1c;
+  /*черный цвет футера */
+  color: #ffffff;
+  /*белый цвет текста, сработало только для div */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+footer.bottom a {
+  display: inline-block;
+  /*не работает*/
+  color: #ffffff;
+  /*  белый цвет текста для ссылок RUS ENG A:visited active */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /*три строки ниже нужно добавить в active но как это проверить, протестить? */
+  padding: 10px;
+  /*border: 5px #fc0;
+    border-bottom-style: solid;
+    text-decoration:none; отменяет подчеркивание */
+  border-bottom: 5px solid transparent;
+}
+
+footer.bottom .active {
+  border-color: red;
+}
+
+/* Active links */
+/*footer.bottom a:link {
+    color: blue;
+  }  Unvisited links */
+/*footer.bottom a:visited {
+    color: purple;
+  } /* Visited links */
+/*footer.bottom a:hover {
+    background: yellow;
+  }  User hovers */
