@@ -40,7 +40,7 @@ header a {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-si.clearfixx;
+  font-size: clearfixx;
   line-height: 19px;
 }
 
@@ -80,12 +80,12 @@ section h1 {
 body {
   /*  селектор для определения фона страницы */
   background-color: #fff;
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/Mohaka.png);
+  background-image: url("../images/Mohaka.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  background: center / cover url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/Mohaka.png) no-repeat fixed #fff;
+  background: center / cover url("../images/Mohaka.png") no-repeat fixed #fff;
   /* то же самое, что выше, другой способ*/
 }
 
@@ -123,15 +123,15 @@ section.list li {
 }
 
 #pic1 {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/item1.svg);
+  background-image: url("../images/item1.svg");
 }
 
 #pic2 {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/item2.svg);
+  background-image: url("../images/item2.svg");
 }
 
 #pic3 {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/item3.svg);
+  background-image: url("../images/item3.svg");
 }
 
 div.pictures {
@@ -142,7 +142,7 @@ div.pictures {
 }
 
 #pic4 {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/icon-info.svg);
+  background-image: url("../images/icon-info.svg");
   width: 25px;
   height: 25px;
   left: 25px;
@@ -173,7 +173,7 @@ footer.topfoo div {
 }
 
 footer.topfoo a {
-  /* ima: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/icon-info.svg); */
+  /* ima: url("../images/icon-info.svg"); */
   color: #eb5757;
   /* красный цвет текста для ссылки Почитать */
   font-family: Roboto;
