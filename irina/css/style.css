@@ -17,7 +17,7 @@ header div {
 }
 
 #logo {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/LogoBestSite.svg);
+  background-image: url("../images/LogoBestSite.svg");
   width: 32px;
   height: 32px;
   left: 32px;
