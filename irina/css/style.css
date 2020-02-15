@@ -1,5 +1,5 @@
 header {
-  margin: 16px 22px 0px 22px;
+  margin: 22px 22px 0px 22px;
   /* для всего Header отступы*/
 }
 
@@ -11,19 +11,20 @@ header div {
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
+  line-height: 26px;
   float: left;
-  margin: 12px;
+  margin: 0px 0px 0px 12px;
   /* для BEST SITE расстояние от лого*/
 }
 
 #logo {
   background-image: url("../images/LogoBestSite.svg");
-  width: 32px;
-  height: 32px;
-  left: 32px;
-  top: 32px;
+  width: 33.5px;
+  height: 33.5px;
+  left: 33.5px;
+  top: 33.5px;
   float: left;
-  margin: 0px 0px 0px 0px;
+  margin: 0px 0px 7px 0px;
   /* лого на одном уровне с BS, не поняла почему*/
 }
 
@@ -33,15 +34,16 @@ a {
 
 /*  отменяет подчеркивание */
 
-header a {
+header>ul>li>a {
   /* ссылки в хедере красным*/
   text-transform: uppercase;
   color: #d55151;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: clearfixx;
   line-height: 19px;
+  margin: 0px 0px 0px 24px;
+  padding: 7px 0px 0px 0px;
 }
 
 header ul {
@@ -51,15 +53,6 @@ header ul {
 header ul li {
   display: inline-block;
   /* блоки между  собой стали в строку*/
-}
-
-section ul {
-  float: left;
-}
-
-section ul li div {
-  display: inline-block;
-  /* текст и картинки между  собой стали в строку*/
 }
 
 .clearfix {
@@ -114,14 +107,34 @@ section p {
 }
 
 section.list li {
-  display: inline-block;
-  /* расположить пункты горизонтально */
+  /* display: inline-block;
+  расположить блоки li горизонтально */
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
+  display: flex; /* перенос текста */
+  width: 200px;
+  height: 200px;
 }
+
+/* section.list ul {
+  float: left;
+}*/
+
+section div {
+  display: inline-block;
+  /* текст и картинки между собой стали в строку внутри каждого li*/
+   width: 100px;
+  margin: auto; /*перенос текста */
+}
+
+/*section ul li .text{
+  display: flexbox;
+  width: 250px;
+  height: 250px;
+} */
 
 #pic1 {
   background-image: url("../images/item1.svg");
