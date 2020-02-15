@@ -12,19 +12,19 @@
 <body>
   <main>
     <header>
-      <p class="clearfix"></p>
+      <p class="clearfix"></p> <!--для фиксирования ширины, чтобы float не менял-->
       <h1>
         <a href="/" id="logo"><a />
           <div>
             лучший сайт
           </div>
-          <h1>
-            <ul>
-              <li><a href="">About</a></li>
-              <li><a href="">Contacts</a></li>
-              <li><a href="">Services</a></li>
-            </ul>
-            <p class="clearfix"></p>
+      </h1>
+          <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Contacts</a></li>
+          <li><a href="">Services</a></li>
+          </ul>
+      <p class="clearfix"></p>
     </header>
     <article>
       <section>
@@ -59,16 +59,19 @@
       </footer>
     </article>
   </main>
+ 
   <footer class='bottom'>
+    <p class="clearfix"></p>
     <div>© 2020. All rights reserved</div>
     <a href="/" class='active'>
       <i></i>
       RUS
     </a>
-    <a href="en.html">
+    <a href="en.html" class='eng'>
       <i></i>
       ENG
     </a>
+    <p class="clearfix"></p>
   </footer>
 </body>
 
