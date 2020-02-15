@@ -150,7 +150,7 @@ div.pictures {
   top: 25px;
 }
 
-button {
+footer.topfoo button {
   /* красота кнопки из фигмы */
   width: 342px;
   height: 64px;
@@ -160,9 +160,6 @@ button {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
   margin: 243px 0px 28px 22px;
-}
-
-footer.topfoo button {
   color: #ffffff;
   /* белый цвет текста для кнопки */
   text-transform: uppercase;
@@ -170,11 +167,10 @@ footer.topfoo button {
 }
 
 footer.topfoo div {
-  margin: 0px 0px 0px 22px;
+  margin: 0px 0px 89px 22px;
+  float: left;
 }
-
 footer.topfoo a {
-  /* ima: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/icon-info.svg); */
   color: #eb5757;
   /* красный цвет текста для ссылки Почитать */
   font-family: Roboto;
@@ -182,8 +178,8 @@ footer.topfoo a {
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-  margin: 0px 0px 89px 22px;
-  display: inline-block;
+  margin: 0px 0px 89px 8px;
+  float: left; 
 }
 
 
