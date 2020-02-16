@@ -1,5 +1,5 @@
 header {
-  margin: 16px 22px 0px 22px;
+  margin: 22px 22px 0px 22px;
   /* для всего Header отступы*/
 }
 
@@ -11,19 +11,20 @@ header div {
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
+  line-height: 26px;
   float: left;
-  margin: 12px;
+  margin: 0px 0px 0px 12px;
   /* для BEST SITE расстояние от лого*/
 }
 
 #logo {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/LogoBestSite.svg);
-  width: 32px;
-  height: 32px;
-  left: 32px;
-  top: 32px;
+  background-image: url("../images/LogoBestSite.svg");
+  width: 33.5px;
+  height: 33.5px;
+  left: 33.5px;
+  top: 33.5px;
   float: left;
-  margin: 0px 0px 0px 0px;
+  margin: 0px 0px 7px 0px;
   /* лого на одном уровне с BS, не поняла почему*/
 }
 
@@ -33,19 +34,20 @@ a {
 
 /*  отменяет подчеркивание */
 
-header a {
+header>ul>li>a {
   /* ссылки в хедере красным*/
   text-transform: uppercase;
   color: #d55151;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-si.clearfixx;
   line-height: 19px;
+  margin: 0px 0px 0px 24px;
+  padding: 7px 0px 0px 0px;
 }
 
 header ul {
-  float: right;
+  float: right;  /* ul выровняли вправо*/
 }
 
 header ul li {
@@ -53,18 +55,9 @@ header ul li {
   /* блоки между  собой стали в строку*/
 }
 
-section ul {
-  float: left;
-}
-
-section ul li div {
-  display: inline-block;
-  /* текст и картинки между  собой стали в строку*/
-}
-
 .clearfix {
   clear: both;
-  /* искуственно создали пустые теги для хедера и section, чтоб сделать отступы, так как из-за флоат все развалилось*/
+  /* искуственно создали пустые теги для хедера, section, footer.bottom, чтоб сделать отступы, так как из-за флоат все развалилось*/
 }
 
 section h1 {
@@ -80,13 +73,14 @@ section h1 {
 body {
   /*  селектор для определения фона страницы */
   background-color: #fff;
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/Mohaka.png);
+  background-image: url("../images/Mohaka.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  background: center / cover url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/Mohaka.png) no-repeat fixed #fff;
-  /* то же самое, что выше, другой способ*/
+  background: center / cover url("../images/Mohaka.png"); 
+  /*no-repeat fixed #fff;
+   то же самое, что выше, другой способ*/
 }
 
 main {
@@ -113,25 +107,45 @@ section p {
 }
 
 section.list li {
-  display: inline-block;
-  /* расположить пункты горизонтально */
+  /* display: inline-block;
+  расположить блоки li горизонтально */
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
+  display: flex; /* перенос текста */
+  width: 200px;
+  height: 200px;
 }
 
+/* section.list ul {
+  float: left;
+}*/
+
+section div {
+  display: inline-block;
+  /* текст и картинки между собой стали в строку внутри каждого li*/
+   width: 100px;
+  margin: auto; /*перенос текста */
+}
+
+/*section ul li .text{
+  display: flexbox;
+  width: 250px;
+  height: 250px;
+} */
+
 #pic1 {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/item1.svg);
+  background-image: url("../images/item1.svg");
 }
 
 #pic2 {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/item2.svg);
+  background-image: url("../images/item2.svg");
 }
 
 #pic3 {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/item3.svg);
+  background-image: url("../images/item3.svg");
 }
 
 div.pictures {
@@ -142,14 +156,14 @@ div.pictures {
 }
 
 #pic4 {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/icon-info.svg);
+  background-image: url("../images/icon-info.svg");
   width: 25px;
   height: 25px;
   left: 25px;
   top: 25px;
 }
 
-button {
+footer.topfoo button {
   /* красота кнопки из фигмы */
   width: 342px;
   height: 64px;
@@ -159,9 +173,6 @@ button {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
   margin: 243px 0px 28px 22px;
-}
-
-footer.topfoo button {
   color: #ffffff;
   /* белый цвет текста для кнопки */
   text-transform: uppercase;
@@ -169,11 +180,10 @@ footer.topfoo button {
 }
 
 footer.topfoo div {
-  margin: 0px 0px 0px 22px;
+  margin: 0px 0px 89px 22px;
+  float: left;
 }
-
 footer.topfoo a {
-  /* ima: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/108082/icon-info.svg); */
   color: #eb5757;
   /* красный цвет текста для ссылки Почитать */
   font-family: Roboto;
@@ -181,8 +191,10 @@ footer.topfoo a {
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-  margin: 0px 0px 89px 22px;
+  margin: 0px 0px 89px 8px;
+  float: left; 
 }
+
 
 footer.bottom {
   /* футер. который идет после main: main + footer */
@@ -197,26 +209,37 @@ footer.bottom {
   line-height: 24px;
 }
 
+footer.bottom div {/* 2020.Reserved */
+margin: 0px 0px 0px 19px;
+padding: 15px;
+float: left;
+}
+
 footer.bottom a {
-  display: inline-block;
-  /*не работает*/
-  color: #ffffff;
-  /*  белый цвет текста для ссылок RUS ENG A:visited active */
+float: right;  /* выровняли вправо RUS ENG*/
+}
+
+footer.bottom .active {
+  margin: 17px 46px 18px 0px; /*для RUS*/
+}
+footer.bottom .eng {
+  margin: 17px 22px 18px 0px; /*для ENG*/
+}
+
+footer.bottom a {
+  color: #ffffff;/*  белый цвет текста для ссылок RUS ENG A:visited active */
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   /*три строки ниже нужно добавить в active но как это проверить, протестить? */
-  padding: 10px;
-  /*border: 5px #fc0;
-    border-bottom-style: solid;
-    text-decoration:none; отменяет подчеркивание */
+  /*text-decoration:none; отменяет подчеркивание */
   border-bottom: 5px solid transparent;
 }
 
 footer.bottom .active {
-  border-color: red;
+  border-color: #ffffff;
 }
 
 /* Active links */
@@ -229,3 +252,5 @@ footer.bottom .active {
 /*footer.bottom a:hover {
     background: yellow;
   }  User hovers */
+
+ 
